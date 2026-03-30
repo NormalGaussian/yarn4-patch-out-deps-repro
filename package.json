@@ -1,6 +1,7 @@
 {
   "name": "remove-dep",
   "packageManager": "yarn@4.13.0",
+  "bin": "./index.js",
   "dependencies": {
     "vite": "patch:vite@npm%3A8.0.3#~/.yarn/patches/vite-npm-8.0.3-e14b766c39.patch"
   }

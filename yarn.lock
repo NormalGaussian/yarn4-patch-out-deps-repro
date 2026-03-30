@@ -728,6 +728,8 @@ __metadata:
   resolution: "remove-dep@workspace:."
   dependencies:
     vite: "patch:vite@npm%3A8.0.3#~/.yarn/patches/vite-npm-8.0.3-e14b766c39.patch"
+  bin:
+    remove-dep: ./index.js
   languageName: unknown
   linkType: soft
 
@@ -938,7 +940,7 @@ __metadata:
 
 "vite@patch:vite@npm%3A8.0.3#~/.yarn/patches/vite-npm-8.0.3-e14b766c39.patch":
   version: 8.0.3
-  resolution: "vite@patch:vite@npm%3A8.0.3#~/.yarn/patches/vite-npm-8.0.3-e14b766c39.patch::version=8.0.3&hash=1a17c2"
+  resolution: "vite@patch:vite@npm%3A8.0.3#~/.yarn/patches/vite-npm-8.0.3-e14b766c39.patch::version=8.0.3&hash=95f6cd"
   dependencies:
     fsevents: "npm:~2.3.3"
     lightningcss: "npm:^1.32.0"
@@ -989,7 +991,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/031475a6a934ac74652c0e7b2dbe8f11a9b7ad12ec1718269bc75c333244cced5c0c0daf83b74ac26c3e69ed0e0c570aa2ad857ab02ea4424e59a1fed770fd69
+  checksum: 10c0/6d483a8f1e9d83f06c12b96d680d19b1e1540bae6143bd59573600afcd2b50b3bf1182a58730303d077dd5c10e72dedf45e4095ffc883118384dadd4d5eddc2f
   languageName: node
   linkType: hard
 

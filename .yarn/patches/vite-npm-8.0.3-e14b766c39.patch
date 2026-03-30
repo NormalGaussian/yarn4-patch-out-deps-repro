@@ -1,8 +1,47 @@
+diff --git a/bin/revite.js b/bin/revite.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..2a3bb3d8f6645a5ec25cd5856908c4728ce58261
+--- /dev/null
++++ b/bin/revite.js
+@@ -0,0 +1,5 @@
++console.log("Running replacement entrypoint");
++
++const picomatch = require('picomatch');
++
++console.log({ picomatch });
+diff --git a/dist/node/revite.js b/dist/node/revite.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..2a3bb3d8f6645a5ec25cd5856908c4728ce58261
+--- /dev/null
++++ b/dist/node/revite.js
+@@ -0,0 +1,5 @@
++console.log("Running replacement entrypoint");
++
++const picomatch = require('picomatch');
++
++console.log({ picomatch });
 diff --git a/package.json b/package.json
-index 40b7196ea7833390883332ef9dc42ec1a5d37684..687976a382bf7bbd971d4580255de8bff3a8c856 100644
+index 40b7196ea7833390883332ef9dc42ec1a5d37684..5c85796f3705d2d595c0876b502a603feb5daa50 100644
 --- a/package.json
 +++ b/package.json
-@@ -60,122 +60,14 @@
+@@ -6,7 +6,7 @@
+   "author": "Evan You",
+   "description": "Native-ESM powered web dev build tool",
+   "bin": {
+-    "vite": "bin/vite.js"
++    "vite": "bin/revite.js"
+   },
+   "keywords": [
+     "frontend",
+@@ -17,6 +17,7 @@
+     "vite"
+   ],
+   "exports": {
++    "./revite": "./dist/node/revite.js",
+     ".": "./dist/node/index.js",
+     "./client": {
+       "types": "./client.d.ts"
+@@ -60,122 +61,14 @@
    "funding": "https://github.com/vitejs/vite?sponsor=1",
    "//": "READ CONTRIBUTING.md to understand what to put under deps vs. devDeps!",
    "dependencies": {
